@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang=""><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>CURL</title>
+    <meta name="description" content="RBPi&#39;s Blog">
+    <meta name="author" content='RBPi'>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
+
+    
+    <link rel="stylesheet" href="/sass/researcher.min.css">
+
+    
+        <link rel="icon" type="image/ico" href="http://192.168.50.56:1333/favicon.ico">
+    
+
+    
+        
+    
+</head>
+
+    <body><div class="container mt-5">
+    <nav class="navbar navbar-expand-sm flex-column flex-sm-row text-nowrap p-0">
+        <a class="navbar-brand mx-0 mr-sm-auto" href="http://192.168.50.56:1333/" title="RBPi&#39;s Blog">
+          
+          RBPi&#39;s Blog
+        </a>
+        <div class="navbar-nav flex-row flex-wrap justify-content-center">
+            
+                
+                
+                    <a class="nav-item nav-link" href="/about" title="About">
+                        About
+                    </a>
+                    
+                        <span class="nav-item navbar-text mx-1">/</span>
+                    
+                
+                    <a class="nav-item nav-link" href="/contact" title="Contact">
+                        Contact
+                    </a>
+                    
+                
+            
+        </div>
+    </nav>
+</div>
+<hr>
+<div id="content">
+<div class="container">
+    <h2 id="curl">cURL</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Command</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <code>curl -h</code></td>
+<td>cURL help menu</td>
+</tr>
+<tr>
+<td> <code>curl inlanefreight.com</code></td>
+<td>Basic GET request</td>
+</tr>
+<tr>
+<td> <code>curl -s -O inlanefreight.com/index.html</code></td>
+<td>Download file</td>
+</tr>
+<tr>
+<td> <code>curl -k https://inlanefreight.com</code></td>
+<td>Skip HTTPS (SSL) certificate validation</td>
+</tr>
+<tr>
+<td> <code>curl inlanefreight.com -v</code></td>
+<td>Print full HTTP request/response details</td>
+</tr>
+<tr>
+<td> <code>curl -I https://www.inlanefreight.com</code></td>
+<td>Send HEAD request (only prints response headers)</td>
+</tr>
+<tr>
+<td> <code>curl -i https://www.inlanefreight.com</code></td>
+<td>Print response headers and response body</td>
+</tr>
+<tr>
+<td> <code>curl https://www.inlanefreight.com -A 'Mozilla/5.0'</code></td>
+<td>Set User-Agent header</td>
+</tr>
+<tr>
+<td> <code>curl -u admin:admin http://&lt;SERVER_IP&gt;:&lt;PORT&gt;/</code></td>
+<td>Set HTTP basic authorization credentials</td>
+</tr>
+<tr>
+<td> <code>curl  http://admin:admin@&lt;SERVER_IP&gt;:&lt;PORT&gt;/</code></td>
+<td>Pass HTT basic authorization credentials in the URL</td>
+</tr>
+<tr>
+<td> <code>curl -H 'Authorization: Basic YWRtaW46YWRtaW4=' http://&lt;SERVER_IP&gt;:&lt;PORT&gt;/</code></td>
+<td>Set request header</td>
+</tr>
+<tr>
+<td> <code>curl 'http://&lt;SERVER_IP&gt;:&lt;PORT&gt;/search.php?search=le'</code></td>
+<td>Pass GET parameters</td>
+</tr>
+<tr>
+<td> <code>curl -X POST -d 'username=admin&amp;password=admin' http://&lt;SERVER_IP&gt;:&lt;PORT&gt;/</code></td>
+<td>Send POST request with POST data</td>
+</tr>
+<tr>
+<td> <code>curl -b 'PHPSESSID=c1nsa6op7vtk7kdis7bcnbadf1' http://&lt;SERVER_IP&gt;:&lt;PORT&gt;/</code></td>
+<td>Set request cookies</td>
+</tr>
+<tr>
+<td> <code>curl -X POST -d '{&quot;search&quot;:&quot;london&quot;}' -H 'Content-Type: application/json' http://&lt;SERVER_IP&gt;:&lt;PORT&gt;/search.php</code></td>
+<td>Send POST request with JSON data</td>
+</tr>
+</tbody>
+</table>
+<h2 id="apis">APIs</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Command</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <code>curl http://&lt;SERVER_IP&gt;:&lt;PORT&gt;/api.php/city/london</code></td>
+<td>Read entry</td>
+</tr>
+<tr>
+<td> <code>curl -s http://&lt;SERVER_IP&gt;:&lt;PORT&gt;/api.php/city/ | jq</code></td>
+<td>Read all entries</td>
+</tr>
+<tr>
+<td> <code>curl -X POST http://&lt;SERVER_IP&gt;:&lt;PORT&gt;/api.php/city/ -d '{&quot;city_name&quot;:&quot;HTB_City&quot;, &quot;country_name&quot;:&quot;HTB&quot;}' -H 'Content-Type: application/json'</code></td>
+<td>Create (add) entry</td>
+</tr>
+<tr>
+<td> <code>curl -X PUT http://&lt;SERVER_IP&gt;:&lt;PORT&gt;/api.php/city/london -d '{&quot;city_name&quot;:&quot;New_HTB_City&quot;, &quot;country_name&quot;:&quot;HTB&quot;}' -H 'Content-Type: application/json'</code></td>
+<td>Update (modify) entry</td>
+</tr>
+<tr>
+<td> <code>curl -X DELETE http://&lt;SERVER_IP&gt;:&lt;PORT&gt;/api.php/city/New_HTB_City</code></td>
+<td>Delete entry</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-devtools">Browser DevTools</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Shortcut</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> [<code>CTRL+SHIFT+I</code>] or [<code>F12</code>]</td>
+<td>Show devtools</td>
+</tr>
+<tr>
+<td> [<code>CTRL+SHIFT+E</code>]</td>
+<td>Show Network tab</td>
+</tr>
+<tr>
+<td> [<code>CTRL+SHIFT+K</code>]</td>
+<td>Show Console tab</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+        </div><div id="footer" class="mb-5">
+    <hr>
+    <div class="container text-center">
+        
+            <a href="https://twitter.com/" class="fab fa-twitter fa-1x" title="Twitter"></a>
+        
+            <a href="mailto:rbpioi@163.com" class="fas fa-envelope fa-1x" title="E-mail"></a>
+        
+    </div>
+    
+        <div class="container text-center">
+            <a href="https://github.com/RBPi/" title="©RBPi 2019 - 2022. All rights reserved."><small>©RBPi 2019 - 2022. All rights reserved.</small></a>
+        </div>
+    
+</div>
+</body>
+</html>

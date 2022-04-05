@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on RBPi&#39;s Blog</title>
+    <link>http://192.168.50.56:1333/</link>
+    <description>Recent content in About on RBPi&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Apr 2022 16:08:16 +0800</lastBuildDate><atom:link href="http://192.168.50.56:1333/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CURL</title>
+      <link>http://192.168.50.56:1333/posts/curl/</link>
+      <pubDate>Tue, 05 Apr 2022 16:08:16 +0800</pubDate>
+      
+      <guid>http://192.168.50.56:1333/posts/curl/</guid>
+      <description>cURL    Command Description      curl -h cURL help menu    curl inlanefreight.com Basic GET request    curl -s -O inlanefreight.com/index.html Download file    curl -k https://inlanefreight.com Skip HTTPS (SSL) certificate validation    curl inlanefreight.com -v Print full HTTP request/response details    curl -I https://www.inlanefreight.com Send HEAD request (only prints response headers)    curl -i https://www.</description>
+    </item>
+    
+    <item>
+      <title>Online Tools</title>
+      <link>http://192.168.50.56:1333/posts/online-tools2/</link>
+      <pubDate>Sun, 20 Oct 2019 08:00:00 +0800</pubDate>
+      
+      <guid>http://192.168.50.56:1333/posts/online-tools2/</guid>
+      <description>https://mha.azurewebsites.net/</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://192.168.50.56:1333/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://192.168.50.56:1333/about/</guid>
+      <description>About Me  ID: RBPi / Hugo E-Mail: rbpioi@163.com Experience Level: Script Kiddie  I&amp;rsquo;am work in Cybersecurity and engage in pentesting.
+网络安全爱好者，有一条可爱的修沟，它的名字叫 KK。
+Certifications / 证书 Badge 很好看，就是有点费钱 :o
+   Hacking Playground  Try Hack Me   Hack The Box   Root Me  </description>
+    </item>
+    
+  </channel>
+</rss>

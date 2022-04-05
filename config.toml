@@ -1,0 +1,45 @@
+baseURL = 'http://192.168.50.56:1333/'
+languageCode = 'en-us'
+title = "RBPi's Blog"
+theme = "researcher"
+enableEmoji = true
+
+[params]
+  author = "RBPi"
+  description = "RBPi's Blog"
+  favicon = "favicon.ico"  # path to a .ico to use as favicon
+  logo = ""  # url or path to a logo to put in the header
+  [params.footer]
+    text = "©RBPi 2019 - 2022. All rights reserved."
+    url = "https://github.com/RBPi/"
+  [params.style]  # appearance options (can be omitted)
+    fontFamily = "Inconsolata"
+    pageWidth = "750px"
+    avatarSize = "90px"
+    colorBlack = "#222222"
+    colorRed = "#dc3545"
+  [[params.socialIcons]]
+    icon = "fab fa-twitter"
+    title = "Twitter"
+    url = "https://twitter.com/"
+  [[params.socialIcons]]
+    icon = "fas fa-envelope"
+    title = "E-mail"
+    url = "mailto:rbpioi@163.com"
+
+#[permalinks]
+#  "/" = "/:filename"
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 1
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact"
+    weight = 3
+
+[markup.goldmark.renderer]
+  unsafe = true  # allow raw HTML in markdown files
+
