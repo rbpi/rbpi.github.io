@@ -2,14 +2,14 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Hugo's Blog",
+  title: "Huge's Blog",
   description: "Security",
   lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Notes', link: '/note' },
+      { text: 'Notes', link: '/TEST' },
       { text: 'Examples', link: '/markdown-examples' }
     ],
 
@@ -17,7 +17,7 @@ export default defineConfig({
       {
         text: 'Blog',
         items: [
-          { text: 'Notes', link: '/note' }
+          { text: 'Notes', link: '/TEST' }
         ]
       }
     ],
