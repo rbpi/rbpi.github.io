@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  head: [['link', { rel: 'icon', href: '/new-logo-htb.svg' }]],
   title: "Huge's Blog",
   description: "Security",
   lastUpdated: true,
@@ -9,20 +10,47 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Notes', link: '/TEST' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Posts', link: '/posts/index' },
+      { text: 'About Me', link: '/about' }
     ],
 
     sidebar: [
       {
-        text: 'Blog',
+        text: 'Hack The Box',
         items: [
-          { text: 'Notes', link: '/TEST' }
+          { text: 'Hack The Box', link: '/' }
+        ]
+      },
+      {
+        text: 'TryHackMe',
+        items: [
+          { text: 'TryHackMe', link: '/' }
+        ]
+      },
+      {
+        text: 'Tools',
+        items: [
+          { text: 'Nessus', link: '/posts/Nessus' }
+        ]
+      }
+      ,
+      {
+        text: 'Wireless',
+        items: [
+          { text: 'Wireless', link: '/posts/Wireless' }
+        ]
+      }
+      ,
+      {
+        text: 'To-Do',
+        items: [
+          { text: 'Need update', link: '/posts/' }
         ]
       }
     ],
 
     socialLinks: [
+      { icon: 'linkedin', link: 'https://www.linkedin.com/in/offsec/' },
       { icon: 'github', link: 'https://github.com/RBPi' }
     ],
 
@@ -44,16 +72,3 @@ export default defineConfig({
     }
   }
 })
-
-export interface LastUpdatedOptions {
-  /**
-   * @default 'Last updated'
-   */
-  text?: string
-
-  /**
-   * @default
-   * { dateStyle: 'short',  timeStyle: 'short' }
-   */
-  formatOptions?: Intl.DateTimeFormatOptions & { forceLocale?: boolean }
-}

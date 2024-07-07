@@ -3,23 +3,35 @@
 layout: home
 
 hero:
-  name: "Hugo's Blog"
+  name: "Huge's Blog"
   text: "Security"
-  tagline: My great project tagline
+  tagline: 
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: Blog
       link: /markdown-examples
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Status pages
+      link: https://l.betteruptime.com/
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Hack The Box
+    details: Hack The Box
+    link: /markdown-examples
+  - title: TryHackMe
+    details: TryHackMe
+    link: /markdown-examples
+  - title: Tools
+    details: Tools
+    link: /markdown-examples
 ---
 
+## About
+
+Security Engineer, Penetration Tester, ~~Security Analyst~~
+
+
+<div style="display: flex; justify-content: flex-start; flex-wrap: wrap;">
+  <img src="https://www.hackthebox.eu/badge/image/117845" alt="HTB" style="width: 25%;">
+  <img src="https://tryhackme-badges.s3.amazonaws.com/RBPi.png" alt="THM" style="width: 25%;">
+</div>
