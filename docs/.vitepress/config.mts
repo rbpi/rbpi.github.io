@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  head: [['link', { rel: 'icon', href: '/new-logo-htb.svg' }]],
+  // head: [['link', { rel: 'icon', href: '/new-logo-htb.svg' }]],
   title: "♾️ Huge's Blog",
   description: "Notes",
   lastUpdated: true,
