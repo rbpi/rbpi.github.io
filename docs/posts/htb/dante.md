@@ -1,1 +1,1 @@
-![s](/public/htb-dante-certs.svg)
+![s](/htb-dante-certs.svg)
