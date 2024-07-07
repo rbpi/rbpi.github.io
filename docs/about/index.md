@@ -1,6 +1,7 @@
 # WHOAMI
 
  - Name: Huge
+ - Role: Security Engineer, Penetration Tester, ~~Security Analyst~~
 
 ## MOTTO
 
@@ -13,11 +14,11 @@ I am reviewing the course materials and preparing for the OffSec Experienced Pen
 ## Certifications
 
 <div style="display: flex; justify-content: center; flex-wrap: wrap;">
-  <img src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/49304452" alt="OSCP" />
-  <img src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/49304455" alt="OSWP" />
-  <img src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/49304454" alt="OSWP" />
-  <img src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/61928131" alt="Security Operations Essentials (SOC-100)" />
-  <img src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/61049028" alt="Network Penetration Testing Essentials (PEN-100)" />
-  <img src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79653615" alt="eWPT" />
-  <img src="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/90657448" alt="eWPT" />
+  <img src="/public/badge_oscp.png" alt="OSCP" />
+  <img src="/public/badge_osce.png" alt="OSCE" />
+  <img src="/public/badge_oswp.png" alt="OSWP" />
+  <img src="/public/badge_soc-100.png" alt="Security Operations Essentials (SOC-100)" />
+  <img src="/public/badge_pen-100.png" alt="Network Penetration Testing Essentials (PEN-100)" />
+  <img src="/public/badge_eWPT.png" alt="eWPT" />
+  <img src="/public/badge_crtp.png" alt="eWPT" />
 </div>

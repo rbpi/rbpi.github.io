@@ -3,28 +3,29 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   head: [['link', { rel: 'icon', href: '/new-logo-htb.svg' }]],
-  title: "Huge's Blog",
-  description: "Security",
+  title: "♾️ Huge's Blog",
+  description: "Notes",
   lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Posts', link: '/posts/index' },
-      { text: 'About Me', link: '/about' }
+      { text: 'About', link: '/about' }
     ],
 
     sidebar: [
       {
         text: 'Hack The Box',
         items: [
-          { text: 'Hack The Box', link: '/' }
+          { text: 'Summary', link: '/posts/htb/index.md' },
+          { text: 'Pro Labs: Dante', link: '/posts/htb/dante.md' }
         ]
       },
       {
         text: 'TryHackMe',
         items: [
-          { text: 'TryHackMe', link: '/' }
+          { text: 'Summary', link: '/posts/thm/index.md' }
         ]
       },
       {
@@ -49,12 +50,6 @@ export default defineConfig({
         text: 'Wireless',
         items: [
           { text: 'Wireless', link: '/posts/Wireless' }
-        ]
-      },
-      {
-        text: 'To-Do',
-        items: [
-          { text: 'Need update', link: '/posts/' }
         ]
       }
     ],

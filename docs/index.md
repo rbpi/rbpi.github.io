@@ -4,32 +4,30 @@ layout: home
 
 hero:
   name: "Huge's Blog"
-  text: "Security"
+  text: ""
   tagline: 
   actions:
     - theme: brand
       text: Blog
-      link: /markdown-examples
+      link: /posts
     - theme: alt
       text: Status pages
       link: https://l.betteruptime.com/
 
 features:
   - title: Hack The Box
-    details: Hack The Box
-    link: /markdown-examples
+    details: Hacking Labs
+    link: https://app.hackthebox.com/
+    icon: 
+      src: /new-logo-htb.svg
   - title: TryHackMe
-    details: TryHackMe
-    link: /markdown-examples
-  - title: Tools
-    details: Tools
-    link: /markdown-examples
+    details: hands-on cyber security training platform
+    link: https://tryhackme.com/
+    icon:
+      src: /thm-favicon.png
 ---
 
-## About
-
-Security Engineer, Penetration Tester, ~~Security Analyst~~
-
+##
 
 <div style="display: flex; justify-content: flex-start; flex-wrap: wrap;">
   <img src="https://www.hackthebox.eu/badge/image/117845" alt="HTB" style="width: 25%;">

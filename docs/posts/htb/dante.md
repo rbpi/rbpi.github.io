@@ -1,0 +1,1 @@
+![s](/public/htb-dante-certs.svg)
