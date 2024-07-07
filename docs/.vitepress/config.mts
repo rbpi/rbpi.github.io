@@ -32,15 +32,25 @@ export default defineConfig({
         items: [
           { text: 'Nessus', link: '/posts/Nessus' }
         ]
-      }
-      ,
+      },
+      {
+        text: 'Linux',
+        items: [
+          { text: 'OpenVPN', link: '/posts/Socks5-Proxy-On-OpenVPN' }
+        ]
+      },
+      {
+        text: 'Offsec',
+        items: [
+          { text: 'CTP', link: '/posts/OSCE' }
+        ]
+      },
       {
         text: 'Wireless',
         items: [
           { text: 'Wireless', link: '/posts/Wireless' }
         ]
-      }
-      ,
+      },
       {
         text: 'To-Do',
         items: [
