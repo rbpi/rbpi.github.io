@@ -4,15 +4,15 @@
 
 - Role: Security Engineer, Penetration Tester, ~~Security Analyst~~
 
-## MOTTO
+## ☀️MOTTO
 
 Don't let work deter you from following your passions. Whether it’s information security or an outside hobby, pursue your passions regardless of the norm.
 
-## WHAT AM I DOING NOW
+## 💡WHAT AM I DOING NOW
 
 I am reviewing the course materials and preparing for the OffSec Experienced Penetration Tester (OSEP) exam.
 
-## Certifications
+## ⚡️Certifications
 
 <div style="display: flex; justify-content: center; flex-wrap: wrap;">
   <img src="/badge_oscp.png" alt="OSCP" />
