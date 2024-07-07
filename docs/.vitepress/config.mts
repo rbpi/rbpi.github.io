@@ -29,6 +29,13 @@ export default defineConfig({
         ]
       },
       {
+        text: 'Offsec',
+        items: [
+          { text: 'Wireless Network Attacks', link: '/posts/Wireless-Network-Attacks' },
+          { text: 'CTP', link: '/posts/OSCE' }
+        ]
+      },
+      {
         text: 'Tools',
         items: [
           { text: 'Nessus', link: '/posts/Nessus' }
@@ -38,18 +45,6 @@ export default defineConfig({
         text: 'Linux',
         items: [
           { text: 'OpenVPN', link: '/posts/Socks5-Proxy-On-OpenVPN' }
-        ]
-      },
-      {
-        text: 'Offsec',
-        items: [
-          { text: 'CTP', link: '/posts/OSCE' }
-        ]
-      },
-      {
-        text: 'Wireless',
-        items: [
-          { text: 'Wireless', link: '/posts/Wireless' }
         ]
       }
     ],

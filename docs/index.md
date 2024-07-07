@@ -25,6 +25,11 @@ features:
     link: https://tryhackme.com/
     icon:
       src: /thm-favicon.png
+  - title: Offsec
+    details: Infosec & Cybersecurity Training
+    link: https://www.offsec.com/
+    icon:
+      src: /favicon-offsec.ico
 ---
 
 ##

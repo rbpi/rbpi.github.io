@@ -1,7 +1,8 @@
-# WHOAMI
+# 🧑🏻‍💻WHOAMI
 
- - Name: Huge
- - Role: Security Engineer, Penetration Tester, ~~Security Analyst~~
+- Name: Huge
+
+- Role: Security Engineer, Penetration Tester, ~~Security Analyst~~
 
 ## MOTTO
 

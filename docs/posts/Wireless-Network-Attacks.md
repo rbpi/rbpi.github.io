@@ -1,8 +1,9 @@
 ---
-title: Wireless Attacks Cheat Sheet
+title: Wireless Network Attacks
 tags:
   - OffSec
   - Wireless
+  - Attacks
 date: 2020-06-29
 ---
 
