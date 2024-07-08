@@ -26,22 +26,22 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: VitePress Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Not needed if lastUpdated is not enabled
       # - uses: pnpm/action-setup@v3 # Uncomment this if you're using pnpm
       # - uses: oven-sh/setup-bun@v1 # Uncomment this if you're using Bun
-      - name: Setup Node
+      - name: VitePress Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 22.4.0
           cache: npm # or pnpm / yarn
-      - name: Setup Pages
+      - name: VitePress Setup Pages
         uses: actions/configure-pages@v4
-      - name: Install dependencies
+      - name: VitePress Install dependencies
         run: npm ci # or pnpm install / yarn install / bun install
-      - name: Build with VitePress
+      - name: VitePress Build with VitePress
         run: npm run docs:build # or pnpm docs:build / yarn docs:build / bun run docs:build
 
       # build CyberChef
@@ -52,25 +52,23 @@ jobs:
           ref: master
           fetch-depth: 1
           path: CyberChef
-      
       - name: CyberChef Set node version
         uses: actions/setup-node@v4
         with:
           node-version: '18.x'
-
       - name: CyberChef Install
         run: |
           cd CyberChef
           npm install
           npm run setheapsize
-
       - name: CyberChef Production Build
         if: success()
         run: |
           cd CyberChef
           npx grunt prod --msg="Huge Build"
-          cp ./build/prod docs/.vitepress/dist/CyberChef
+          cp -r ./build/prod docs/.vitepress/dist/CyberChef
 
+      # Upload artifact
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
