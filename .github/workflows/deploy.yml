@@ -71,10 +71,10 @@ jobs:
           cd docs/.vitepress/dist/cyberchef
           npx grunt prod --msg="Huge Build"
 
-        - name: Upload artifact
-          uses: actions/upload-pages-artifact@v3
-          with:
-            path: docs/.vitepress/dist
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/.vitepress/dist
 
   # Deployment job
   deploy:
