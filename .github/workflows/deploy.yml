@@ -66,10 +66,15 @@ jobs:
         run: |
           cd CyberChef
           npx grunt prod --msg="Huge Build"
-          cp -r ./build/prod docs/.vitepress/dist/CyberChef
 
       # Upload artifact
+      - name: Collect artifact
+        run: |
+          cp -r ./CyberChef/build/prod docs/.vitepress/dist/CyberChef
+          ls -lht docs/.vitepress/dist/
+
       - name: Upload artifact
+        run: ls
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs/.vitepress/dist
