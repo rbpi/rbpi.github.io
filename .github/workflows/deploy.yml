@@ -67,12 +67,9 @@ jobs:
       - name: CyberChef Production Build
         if: success()
         run: |
-          ls -lht
           cd CyberChef
           npx grunt prod --msg="Huge Build"
-          ls -lht
-          ls -lht ./build/prod
-
+          cp ./build/prod docs/.vitepress/dist/CyberChef
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
