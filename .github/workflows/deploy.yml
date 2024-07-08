@@ -60,7 +60,7 @@ jobs:
 
       - name: CyberChef Install
         run: |
-          cd cyberchef
+          cd CyberChef
           npm install
           npm run setheapsize
 
@@ -68,7 +68,7 @@ jobs:
         if: success()
         run: |
           ls -lht
-          cd cyberchef
+          cd CyberChef
           npx grunt prod --msg="Huge Build"
           ls -lht
           ls -lht ./build/prod
