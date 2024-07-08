@@ -45,31 +45,34 @@ jobs:
         run: npm run docs:build # or pnpm docs:build / yarn docs:build / bun run docs:build
 
       # build CyberChef
-      - name: Checkout
+      - name: CyberChef Checkout
         uses: actions/checkout@v4
         with:
           repository: gchq/CyberChef
           ref: master
           fetch-depth: 1
-          path: docs/.vitepress/dist/cyberchef
+          path: CyberChef
       
-      - name: Set node version
+      - name: CyberChef Set node version
         uses: actions/setup-node@v4
         with:
           node-version: '18.x'
-          cache: npm
 
-      - name: Install
+      - name: CyberChef Install
         run: |
-          cd docs/.vitepress/dist/cyberchef
+          cd cyberchef
           npm install
           npm run setheapsize
 
-      - name: Production Build
+      - name: CyberChef Production Build
         if: success()
         run: |
-          cd docs/.vitepress/dist/cyberchef
+          ls -lht
+          cd cyberchef
           npx grunt prod --msg="Huge Build"
+          ls -lht
+          ls -lht ./build/prod
+
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
