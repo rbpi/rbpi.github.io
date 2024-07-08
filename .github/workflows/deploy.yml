@@ -71,7 +71,6 @@ jobs:
       - name: Collect artifact
         run: |
           cp -r ./CyberChef/build/prod docs/.vitepress/dist/CyberChef
-          ls -lht docs/.vitepress/dist/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
