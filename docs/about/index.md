@@ -21,5 +21,5 @@ I am reviewing the course materials and preparing for the OffSec Experienced Pen
   <img src="/badge_soc-100.png" alt="Security Operations Essentials (SOC-100)" />
   <img src="/badge_pen-100.png" alt="Network Penetration Testing Essentials (PEN-100)" />
   <img src="/badge_eWPT.png" alt="eWPT" />
-  <img src="/badge_crtp.png" alt="eWPT" />
+  <img src="/badge_crtp.png" alt="CRTP" />
 </div>

@@ -11,8 +11,11 @@ hero:
       text: Blog
       link: /posts
     - theme: alt
-      text: Status pages
-      link: https://l.betteruptime.com/
+      text: Careers
+      link: /posts/career
+    # - theme: alt
+    #   text: Status pages
+    #   link: https://l.betteruptime.com/
 
 features:
   - title: Hack The Box

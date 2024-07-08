@@ -11,7 +11,8 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Posts', link: '/posts/index' },
-      { text: 'About', link: '/about' }
+      { text: 'About', link: '/about' },
+      { text: 'Status', link: 'https://l.betteruptime.com/' }
     ],
 
     sidebar: [
@@ -25,7 +26,7 @@ export default defineConfig({
       {
         text: 'TryHackMe',
         items: [
-          { text: 'Summary', link: '/posts/thm/index.md' }
+          { text: 'TryHack3M: Bricks Heist', link: '/posts/thm/tryhack3mbricksheist' }
         ]
       },
       {
@@ -36,14 +37,9 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Tools',
+        text: 'Others',
         items: [
-          { text: 'Nessus', link: '/posts/Nessus' }
-        ]
-      },
-      {
-        text: 'Linux',
-        items: [
+          { text: 'Nessus', link: '/posts/Nessus' },
           { text: 'OpenVPN', link: '/posts/Socks5-Proxy-On-OpenVPN' }
         ]
       }
