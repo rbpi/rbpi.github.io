@@ -43,10 +43,38 @@ jobs:
         run: npm ci # or pnpm install / yarn install / bun install
       - name: Build with VitePress
         run: npm run docs:build # or pnpm docs:build / yarn docs:build / bun run docs:build
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+
+      # build CyberChef
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
-          path: docs/.vitepress/dist
+          repository: gchq/CyberChef
+          ref: master
+          fetch-depth: 1
+          path: docs/.vitepress/dist/cyberchef
+      
+      - name: Set node version
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18.x'
+          cache: npm
+
+      - name: Install
+        run: |
+          cd docs/.vitepress/dist/cyberchef
+          npm install
+          npm run setheapsize
+
+      - name: Production Build
+        if: success()
+        run: |
+          cd docs/.vitepress/dist/cyberchef
+          npx grunt prod --msg="Huge Build"
+
+        - name: Upload artifact
+          uses: actions/upload-pages-artifact@v3
+          with:
+            path: docs/.vitepress/dist
 
   # Deployment job
   deploy:
