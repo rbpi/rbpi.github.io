@@ -35,7 +35,7 @@ features:
       src: /favicon-offsec.ico
   - title: CyberChef
     details: The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis 
-    link: /CyberChef/
+    link: /CyberChef/index.html
     icon:
       src: /favicon_CyberChef.ico
 

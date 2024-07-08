@@ -70,6 +70,7 @@ jobs:
       # Upload artifact
       - name: Collect artifact
         run: |
+          rm ./CyberChef/build/prod/*.zip
           cp -r ./CyberChef/build/prod docs/.vitepress/dist/CyberChef
 
       - name: Upload artifact
