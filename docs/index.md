@@ -18,6 +18,11 @@ hero:
     #   link: https://l.betteruptime.com/
 
 features:
+  - title: CyberChef
+    details: The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis 
+    link: https://rbpi.cc/CyberChef/
+    icon:
+      src: /favicon_CyberChef.ico
   - title: Hack The Box
     details: Hacking Labs
     link: https://app.hackthebox.com/
@@ -33,17 +38,14 @@ features:
     link: https://www.offsec.com/
     icon:
       src: /favicon-offsec.ico
-  - title: CyberChef
-    details: The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis 
-    link: https://www.rbpi.cc/CyberChef/
-    icon:
-      src: /favicon_CyberChef.ico
 
 ---
 
-##
+## Labs Badge
 
-<div style="display: flex; justify-content: flex-start; flex-wrap: wrap;">
-  <img src="https://www.hackthebox.eu/badge/image/117845" alt="HTB" style="width: 25%;">
-  <img src="https://tryhackme-badges.s3.amazonaws.com/RBPi.png" alt="THM" style="width: 25%;">
+<div style="display: flex; flex-wrap: wrap;">
+  <img src="https://www.hackthebox.eu/badge/image/117845" alt="HTB" style="margin-bottom: 10px; margin-right: 10px;">
+  <img src="https://tryhackme-badges.s3.amazonaws.com/RBPi.png" alt="THM" style="margin-bottom: 10px;">
 </div>
+
+---
