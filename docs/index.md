@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "Huge's Blog"
+  name: "Huge Blog"
   text: ""
   tagline: 
   actions:
@@ -23,13 +23,18 @@ features:
     link: https://rbpi.cc/CyberChef/
     icon:
       src: /favicon_CyberChef.ico
-  - title: Hack The Box
+  - title: HTB Academy
+    details: From comprehensive beginner-level to advanced online courses covering offensive, defensive, or general security domains.
+    link: https://academy.hackthebox.com/
+    icon: 
+      src: /new-logo-htb.svg
+  - title: HTB Labs
     details: Hacking Labs
     link: https://app.hackthebox.com/
     icon: 
       src: /new-logo-htb.svg
   - title: TryHackMe
-    details: hands-on cyber security training platform
+    details: Hands-on cyber security training through real-world scenarios
     link: https://tryhackme.com/
     icon:
       src: /thm-favicon.png

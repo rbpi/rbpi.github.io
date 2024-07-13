@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   head: [['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' }]],
-  title: "Huge's Blog",
+  title: "Huge Blog",
   description: "Notes",
   lastUpdated: true,
   themeConfig: {
