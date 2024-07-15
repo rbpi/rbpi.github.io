@@ -47,7 +47,8 @@ jobs:
 
       - name: Build with VitePress
         run: npm run docs:build # or pnpm docs:build / yarn docs:build / bun run docs:build
-
+      - run: |
+          ls -alht docs/.vitepress/dist
       - name: Checkout tools repo
         uses: actions/checkout@v4
         with:
@@ -56,7 +57,7 @@ jobs:
           path: docs/.vitepress/dist
       - run: |
           ls -alht docs/.vitepress/dist
-          rm -rf docs/.vitepress/dist/.github
+          rm -rf docs/.vitepress/dist/.git*
           ls -alht docs/.vitepress/dist
   #     - name: Upload artifact
   #       uses: actions/upload-pages-artifact@v3
