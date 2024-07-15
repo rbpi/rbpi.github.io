@@ -52,6 +52,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: rbpi/box
+          token: ${{ secrets.PAT_BOX }}
           path: docs/.vitepress/dist
       - run: |
           ls -alht docs/.vitepress/dist
