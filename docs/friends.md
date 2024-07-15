@@ -33,7 +33,7 @@ const coreMembers = [
     ]
   },
   {
-    avatar: 'https://oss.mattshi.com/img/avatar.webp',
+    avatar: 'https://github.com/SneakyTurt1e.png',
     name: 'Matt Shi',
     title: '',
     desc: '没有天生的高手,也没有永远的菜鸡',
