@@ -54,10 +54,12 @@ jobs:
         with:
           repository: rbpi/box
           token: ${{ secrets.PAT_BOX }}
-          path: docs/.vitepress/dist
+          path: docs/.vitepress/dist/box
       - run: |
-          ls -alht docs/.vitepress/dist
-          rm -rf docs/.vitepress/dist/.git*
+          mv docs/.vitepress/dist/box/CyberChef docs/.vitepress/dist/
+          ls -alht docs/.vitepress/dist/
+          ls -alht docs/.vitepress/dist/box
+          rm -rf docs/.vitepress/dist/box
           ls -alht docs/.vitepress/dist
   #     - name: Upload artifact
   #       uses: actions/upload-pages-artifact@v3
