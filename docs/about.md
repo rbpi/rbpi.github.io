@@ -1,3 +1,7 @@
+---
+layout: doc
+---
+
 # 🧑🏻‍💻WHOAMI
 
 - Name: Huge

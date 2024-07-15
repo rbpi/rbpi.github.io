@@ -3,16 +3,19 @@
 layout: home
 
 hero:
-  name: "Huge Blog"
+  name: "KK Blog"
   text: ""
-  tagline: 
+  tagline: Continuous learning...
+  image:
+    src: /kk.jpg
   actions:
     - theme: brand
       text: Blog
       link: /posts
+      target: _self
     - theme: alt
       text: Careers
-      link: /posts/career
+      link: /career
     # - theme: alt
     #   text: Status pages
     #   link: https://l.betteruptime.com/
@@ -49,8 +52,10 @@ features:
 ## Labs Badge
 
 <div style="display: flex; flex-wrap: wrap;">
-  <img src="https://www.hackthebox.eu/badge/image/117845" alt="HTB" style="margin-bottom: 10px; margin-right: 10px;">
-  <img src="https://tryhackme-badges.s3.amazonaws.com/RBPi.png" alt="THM" style="margin-bottom: 10px;">
+  <a href="https://app.hackthebox.com/profile/117845">
+    <img src="https://www.hackthebox.eu/badge/image/117845" alt="HTB" style="margin-bottom: 10px; margin-right: 10px;">
+  </a>
+  <a href="https://tryhackme.com/p/RBPi">
+    <img src="https://tryhackme-badges.s3.amazonaws.com/RBPi.png" alt="THM" style="margin-bottom: 10px;">
+  </a>
 </div>
-
----

@@ -1,3 +1,6 @@
+---
+layout: doc
+---
 *`Published Aug 10, 2020`*
 
 # Connect to remote host through a Socks5 proxy

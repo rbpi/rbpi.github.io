@@ -1,7 +1,10 @@
+---
+layout: doc
+---
 # TryHack3M: Bricks Heist
 
 <div style="display: flex; justify-content: center;">
-  <img src="/posts/thm/tryhack3mbricksheist_logo.png" alt="HTB" style="width: 30%;">
+  <img src="/thm/tryhack3mbricksheist_logo.png" alt="HTB" style="width: 30%;">
 </div>
 
 # Room description

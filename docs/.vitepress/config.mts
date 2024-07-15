@@ -3,47 +3,59 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   head: [['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' }]],
-  title: "Huge Blog",
-  description: "Notes",
+  title: "KK Blog",
+  description: "Blog",
   lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Posts', link: '/posts/index' },
+      { text: 'Posts', link: '/posts' },
       { text: 'About', link: '/about' },
+      { text: 'Friends', link: '/friends' },
       { text: 'Status', link: 'https://l.betteruptime.com/' }
     ],
 
-    sidebar: [
-      {
-        text: 'Hack The Box',
-        items: [
-          { text: 'Summary', link: '/posts/htb/index.md' },
-          { text: 'Pro Labs: Dante', link: '/posts/htb/dante.md' }
-        ]
-      },
-      {
-        text: 'TryHackMe',
-        items: [
-          { text: 'TryHack3M: Bricks Heist', link: '/posts/thm/tryhack3mbricksheist' }
-        ]
-      },
-      {
-        text: 'Offsec',
-        items: [
-          { text: 'Wireless Network Attacks', link: '/posts/Wireless-Network-Attacks' },
-          { text: 'CTP', link: '/posts/OSCE' }
-        ]
-      },
-      {
-        text: 'Others',
-        items: [
-          { text: 'Nessus', link: '/posts/Nessus' },
-          { text: 'OpenVPN', link: '/posts/Socks5-Proxy-On-OpenVPN' }
-        ]
-      }
-    ],
+    sidebar: {
+      // 当用户位于 `guide` 目录时，会显示此侧边栏
+      '/htb/': [
+        {
+          text: 'Hack The Box',
+          items: [
+            { text: 'Index', link: '/htb/' },
+            { text: 'Pro Labs: Dante', link: '/htb/dante' }
+          ]
+        }
+      ],
+      '/thm/': [
+        {
+          text: 'TryHackMe',
+          items: [
+            { text: 'Index', link: '/thm/' },
+            { text: 'TryHack3M: Bricks Heist', link: '/thm/tryhack3mbricksheist' }
+          ]
+        }
+      ],
+      '/offsec/': [
+        {
+          text: 'TryHackMe',
+          items: [
+            { text: 'Index', link: '/thm/' },
+            { text: 'TryHack3M: Bricks Heist', link: '/thm/tryhack3mbricksheist' }
+          ]
+        }
+      ],
+      '/other/': [
+        {
+          text: 'Other',
+          items: [
+            { text: 'Index', link: '/other/' },
+            { text: 'Nessus', link: '/other/Nessus' },
+            { text: 'OpenVPN', link: '/other/Socks5-Proxy-On-OpenVPN' }
+          ]
+        }
+      ]
+    },
 
     socialLinks: [
       { icon: 'linkedin', link: 'https://www.linkedin.com/in/offsec/' },
@@ -52,7 +64,7 @@ export default defineConfig({
 
     footer: {
       message: '❤️💕',
-      copyright: 'Copyright © 2017-2024 Huge'
+      copyright: 'Copyright © 2017-2024 KK'
     },
 
     search: {
@@ -66,5 +78,8 @@ export default defineConfig({
         timeStyle: 'medium'
       }
     }
+  },
+  markdown: {
+    lineNumbers: true
   }
 })

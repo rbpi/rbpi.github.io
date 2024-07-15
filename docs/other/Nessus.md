@@ -1,8 +1,8 @@
 ---
+layout: doc
 title: Nessus
 date: 2020-08-13
 ---
-
 # Nessus
 
 (Linux/Unix)
