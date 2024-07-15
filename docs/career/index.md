@@ -1,3 +1,3 @@
 # Careers
 
-[Riot Games | Senior Security Engineer](/posts/career/Riot-Games)
+[Riot Games | Senior Security Engineer](/career/Riot-Games)
