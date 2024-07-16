@@ -1,3 +1,10 @@
+---
+layout: doc
+title: Riot Games | Senior Security Engineer
+lang: en-US
+published: true
+---
+
 # Riot Games | Senior Security Engineer
 
 在2024年6月末，闲逛 LinkedIn 中发现以下岗位
@@ -21,6 +28,7 @@ Riot engineers bring deep knowledge of specific technical areas but also value t
 As a **Senior Security Engineer of InfoSec**, you will work on a diverse team across the world to support information security protection and defense. You will act as a subject matter expert in certain infosec domains and be accountable for setting up the China security governance, providing security risk analysis and improving the security awareness. You will report to the China Head of Infosec.
 
 ## Responsibilities:
+
 - Manage and maintain the measurement to monitor and report on the control effectiveness in all information security area in China
 - Ensure the local security governance fulfillment, e.g. MLPS
 - Conduct security risk management tasks and collaborate with teams of different functions to encourage the security concept across the business process
@@ -31,6 +39,7 @@ As a **Senior Security Engineer of InfoSec**, you will work on a diverse team ac
 - Liaise with business security champions for infosec practice implementation and security awareness promotion
 
 ## Required Qualifications
+
 - 6+ years of hands-on experience in security governance and risk management
 - Bachelor’s degree or above
 - Knowledge and understanding of information security frameworks and governance, e.g. MLPS, NIST, ISO 27001
@@ -43,6 +52,7 @@ As a **Senior Security Engineer of InfoSec**, you will work on a diverse team ac
 - Must embrace Riot’s culture, values and missions
 
 ## Desired Qualifications
+
 - Knowledge of development, DevSecOps and SDLC methodologies
 - Experience in application security including penetration test and code review
 Don’t forget to include a resume and cover letter. We receive a lot of applications, but we’ll notice a fun, well-written intro that shows us you take play seriously.
@@ -50,14 +60,17 @@ Don’t forget to include a resume and cover letter. We receive a lot of applica
 For this role, you'll find success through craft expertise, a collaborative spirit, and decision-making that prioritizes the delight of players. We will be looking at your past studies, experience, and your personal relationship with games. If you embody player empathy and care about the experiences of players, this could be the role for you!
 
 ## Our Perks:
+
 Riot Games fosters a player and workplace experience that values teamwork embodied by the Summoner's Code and Community Code. Our culture embraces differences as a strength, and our values are the guiding principles for how we approach work. We are committed to putting diversity and inclusion (D&I) at the center of everything we do, and promoting a fair and collaborative culture where Rioters treat one another with dignity and respect. We encourage you to read more about our value of thriving together and our ongoing work to build the most inclusive company in gaming.
 
 # Application
+
 把握机会，当场就是一个投递申请
 
 ![application](./roit_games_senior_security_engineer_applying.png "application")
 
 约好面试时间
 ![Select Availability](./roit_games_senior_security_engineer_select_availability_1.png "Select Availability")
+
 
 # Conclusion
