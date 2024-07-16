@@ -14,7 +14,7 @@ hero:
       link: /posts
       target: _self
     - theme: alt
-      text: Careers
+      text: Career
       link: /career
     # - theme: alt
     #   text: Status pages
