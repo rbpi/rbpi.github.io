@@ -1,5 +1,7 @@
 ---
 layout: doc
+aside: false
+outline: 2
 ---
 
 # 🧑🏻‍💻WHOAMI

@@ -1,3 +1,6 @@
+---
+layout: doc
+---
 https://tryhackme.com/
 
 # Rooms

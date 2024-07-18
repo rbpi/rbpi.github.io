@@ -61,14 +61,14 @@ const net = [
 </script>
 
 <VPTeamPage>
-  <VPTeamPageTitle>
+  <!-- <VPTeamPageTitle>
     <template #title>Core Friends</template>
     <template #lead>Say hello to my awesome friends.</template>
-  </VPTeamPageTitle>
+  </VPTeamPageTitle> -->
   <VPTeamMembers size="medium" :members="coreMembers" />
   <VPTeamPageSection>
     <template #title>Cyber Friend</template>
-    <template #lead></template>
+    <!-- <template #lead></template> -->
     <template #members>
       <VPTeamMembers size="small" :members="net" />
     </template>

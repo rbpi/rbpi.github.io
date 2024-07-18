@@ -1,13 +1,13 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
-  name: "KK Blog"
-  text: ""
-  tagline: Continuous learning...
+  name: "KK"
+  text: "Security"
+  tagline:  "Hardening Your World"
   image:
     src: /kk.jpg
+    alt: "dog kk"
   actions:
     - theme: brand
       text: Blog
@@ -16,9 +16,6 @@ hero:
     - theme: alt
       text: Career
       link: /career
-    # - theme: alt
-    #   text: Status pages
-    #   link: https://l.betteruptime.com/
 
 features:
   - title: CyberChef
@@ -41,15 +38,14 @@ features:
     link: https://tryhackme.com/
     icon:
       src: /thm-favicon.png
-  - title: Offsec
-    details: Infosec & Cybersecurity Training
-    link: https://www.offsec.com/
-    icon:
-      src: /favicon-offsec.ico
-
+  # - title: Offsec
+  #   details: Infosec & Cybersecurity Training
+  #   link: https://www.offsec.com/
+  #   icon:
+  #     src: /favicon-offsec.ico
 ---
 
-## Labs Badge
+## Häcker
 
 <div style="display: flex; flex-wrap: wrap;">
   <a href="https://app.hackthebox.com/profile/117845">
@@ -59,3 +55,27 @@ features:
     <img src="https://tryhackme-badges.s3.amazonaws.com/RBPi.png" alt="THM" style="margin-bottom: 10px;">
   </a>
 </div>
+
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=https://rbpi.cc)
+
+<style>
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
+
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+@media (min-width: 640px) {
+  :root {
+    --vp-home-hero-image-filter: blur(56px);
+  }
+}
+
+@media (min-width: 960px) {
+  :root {
+    --vp-home-hero-image-filter: blur(68px);
+  }
+}
+</style>

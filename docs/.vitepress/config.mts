@@ -3,21 +3,29 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   head: [['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' }]],
+  lang: 'en-US',
   title: "KK Blog",
-  description: "Blog",
+  description: "KK Blog",
   lastUpdated: true,
   themeConfig: {
+    logo: "/smiling-face-with-sunglasses-svgrepo-com.svg",
+    siteTitle: 'KK Blog',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Posts', link: '/posts' },
       { text: 'About', link: '/about' },
       { text: 'Friends', link: '/friends' },
-      { text: 'Status', link: 'https://l.betteruptime.com/' }
+      {
+        text: 'Other',
+        items: [
+          { text: 'Status', link: 'https://l.betteruptime.com/' }
+        ]
+      }
     ],
 
     sidebar: {
-      // 当用户位于 `guide` 目录时，会显示此侧边栏
+      // 当用户位于目录时，会显示此侧边栏
       '/htb/': [
         {
           text: 'Hack The Box',
@@ -51,7 +59,8 @@ export default defineConfig({
           items: [
             { text: 'Index', link: '/other/' },
             { text: 'Nessus', link: '/other/Nessus' },
-            { text: 'OpenVPN', link: '/other/Socks5-Proxy-On-OpenVPN' }
+            { text: 'OpenVPN', link: '/other/Socks5-Proxy-On-OpenVPN' },
+            { text: 'GitHub Profile', link: '/other/README' }
           ]
         }
       ]
@@ -67,6 +76,11 @@ export default defineConfig({
       copyright: 'Copyright © 2017-2024 KK'
     },
 
+    outline: {
+      level: 'deep',
+      label: 'On this page'
+    },
+
     search: {
       provider: 'local'
     },
@@ -80,6 +94,10 @@ export default defineConfig({
     }
   },
   markdown: {
+    image: {
+      // image lazy loading is disabled by default
+      lazyLoading: false
+    },
     lineNumbers: true
   }
 })
