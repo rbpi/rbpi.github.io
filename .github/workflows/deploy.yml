@@ -29,41 +29,42 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Not needed if lastUpdated is not enabled
+          repository: rbpi/nb
+          token: ${{ secrets.PAT_nb }}
 
-      # - uses: pnpm/action-setup@v3 # Uncomment this if you're using pnpm
-      # - uses: oven-sh/setup-bun@v1 # Uncomment this if you're using Bun
+      - uses: pnpm/action-setup@v4
+      
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 22.4.0
-          cache: npm # or pnpm / yarn
+          cache: pnpm # or pnpm / yarn
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
       - name: Install dependencies
-        run: npm ci # or pnpm install / yarn install / bun install
+        run: pnpm install # or pnpm install / yarn install / bun install
 
       - name: Build with VitePress
-        run: npm run docs:build # or pnpm docs:build / yarn docs:build / bun run docs:build
+        run: pnpm run build # or pnpm docs:build / yarn docs:build / bun run docs:build
 
-      - name: Checkout box repo (private)
-        uses: actions/checkout@v4
-        with:
-          repository: rbpi/box
-          token: ${{ secrets.PAT_BOX }}
-          path: docs/.vitepress/dist/box
+      # - name: Checkout box repo (private)
+      #   uses: actions/checkout@v4
+      #   with:
+      #     repository: rbpi/box
+      #     token: ${{ secrets.PAT_BOX }}
+      #     path: docs/.vitepress/dist/box
 
-      - name: Move CyberChef into web root
-        run: |
-          mv docs/.vitepress/dist/box/CyberChef docs/.vitepress/dist/
-          rm -rf docs/.vitepress/dist/box
+      # - name: Move CyberChef into web root
+      #   run: |
+      #     mv docs/.vitepress/dist/box/CyberChef docs/.vitepress/dist/
+      #     rm -rf docs/.vitepress/dist/box
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs/.vitepress/dist
+          path: .vitepress/dist
 
   # Deployment job
   deploy:

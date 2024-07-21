@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "KK"
   text: "Security"
-  tagline:  "Hardening Your World"
+  tagline:  "Hardening My World"
   image:
     src: /kk.jpg
     alt: "dog kk"
